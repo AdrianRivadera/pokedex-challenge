@@ -1,0 +1,15 @@
+.input {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    min-height: 0;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1;
+    color-scheme: light;
+    color: #222;
+    background: #fff;
+}

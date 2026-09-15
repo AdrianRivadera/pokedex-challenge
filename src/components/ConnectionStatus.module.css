@@ -1,0 +1,25 @@
+.status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: #ccc;
+    background: #2a2a2a;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.online {
+    background: #4caf50;
+}
+
+.offline {
+    background: #d32f2f;
+}

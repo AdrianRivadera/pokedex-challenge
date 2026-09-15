@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.grid>*:only-child {
+    grid-column: 1 / -1;
+}
+
+.containerFilters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 2rem 0;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .containerFilters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,84 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    text-align: left;
+}
+
+.field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.field input {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 0;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1;
+    color-scheme: light;
+    color: #222;
+    background: #fff;
+}
+
+.form button[type='submit'] {
+    padding: 10px 16px;
+    color: white;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.comparison {
+    margin-top: 24px;
+}
+
+.comparisonHeader {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.statRow {
+    display: grid;
+    grid-template-columns: 1fr minmax(80px, 100px) 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.statName {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.statValue {
+    text-align: center;
+    font-weight: bold;
+}

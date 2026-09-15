@@ -1,0 +1,51 @@
+.container {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    left: auto;
+    max-width: calc(100vw - 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+@media (max-width: 600px) {
+    .container {
+        left: 16px;
+    }
+}
+
+.toast {
+    background: #333;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.success {
+    background: #2e7d32;
+}
+
+.info {
+    background: #37474f;
+}
+
+.warning {
+    background: #f57f17;
+}

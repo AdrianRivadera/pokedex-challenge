@@ -1,0 +1,52 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sprite {
+    width: 96px;
+    height: 96px;
+    max-width: 100%;
+    border-radius: 50%;
+    background: #5a5858;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.line {
+    height: 12px;
+    border-radius: 4px;
+    background: #e0e0e0;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.badges {
+    display: flex;
+    gap: 4px;
+}
+
+.badge {
+    width: 50px;
+    height: 18px;
+    border-radius: 12px;
+    background: #e0e0e0;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}

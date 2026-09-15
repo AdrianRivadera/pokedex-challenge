@@ -1,0 +1,123 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    animation: fadeIn 0.25s ease-in;
+    transition:
+        border-color 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.cardLink {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+}
+
+.cardLink:focus-visible {
+    outline: 2px solid #f5a623;
+    outline-offset: 4px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.sprite {
+    width: 96px;
+    height: 96px;
+    max-width: 100%;
+}
+
+.number {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 4px 0 0;
+}
+
+.name {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 4px 0;
+}
+
+.types {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: capitalize;
+}
+
+.favoriteButton {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #f5a623;
+    transition:
+        transform 0.15s ease,
+        color 0.15s ease;
+}
+
+.favoriteButton:focus-visible {
+    outline: 2px solid #f5a623;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.cacheIndicator {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 0.9rem;
+}
+
+@media (hover: hover) {
+    .card:hover {
+        border-color: #999;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .favoriteButton:hover {
+        transform: scale(1.2);
+        color: #ffc14d;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .card,
+    .favoriteButton {
+        transition: none;
+    }
+
+    .card:hover,
+    .favoriteButton:hover {
+        transform: none;
+    }
+}

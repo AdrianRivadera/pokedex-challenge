@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 48px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0;
+}
